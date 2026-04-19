@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruan Roo Publishing — Where Every Page is an Adventure</title>
+  <meta name="description" content="Ruan Roo Publishing offers word search books, coloring books and activity books for adults, seniors, teens and toddlers. Available on Amazon KDP.">
+  <meta name="keywords" content="word search books, coloring books, activity books, puzzle books, adult coloring book, toddler coloring book, word search puzzles, brain games, mindful coloring, Amazon KDP books">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-wrap">
+      <img src="Brand Assets/Ruan Roo Logo transparent.png" alt="Ruan Roo Publishing" style="height:52px;">
+      <span class="nav-slogan">Crafted for curious minds</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="coloring-books.html">Coloring Books</a>
+      <a href="word-search.html">Word Search</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.amazon.com/stores/Ruan-Roo/author/B0GNMS9281?ref=ap_rdr" target="_blank" rel="noopener" class="btn-orange" style="font-size:0.85rem; padding:9px 20px;">Shop on Amazon</a>
+    </div>
+    <button class="nav-burger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Toggle menu">
+      <svg width="26" height="26" fill="none" stroke="#1B4F9C" stroke-width="2.5" stroke-linecap="round">
+        <line x1="3" y1="6" x2="23" y2="6"/><line x1="3" y1="13" x2="23" y2="13"/><line x1="3" y1="20" x2="23" y2="20"/>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about">About</a>
+    <a href="coloring-books.html">🎨 Coloring Books</a>
+    <a href="word-search.html">🔍 Word Search</a>
+    <a href="contact.html">✉️ Contact</a>
+    <a href="https://www.amazon.com/stores/Ruan-Roo/author/B0GNMS9281" target="_blank" rel="noopener" style="color:var(--orange);">Shop on Amazon ↗</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════════ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+
+    <h1>
+      Where Every Page is<br>
+      <span>an Adventure</span> ⭐
+    </h1>
+
+    <p>Word search books, coloring books, and more — crafted for curious minds of every age. All available on Amazon.</p>
+
+    <div class="hero-ctas">
+      <a href="#coloring" class="btn-orange" style="font-size:1.05rem;">Find the Book for You</a>
+      <a href="https://www.amazon.com/stores/Ruan-Roo/author/B0GNMS9281?ref=ap_rdr" target="_blank" rel="noopener" class="btn-outline-blue" style="font-size:1.05rem;">Our Amazon Store</a>
+    </div>
+
+    <!-- Featured Books -->
+    <div class="featured-row">
+
+      <!-- Fairyland -->
+      <div class="feat-card">
+        <div class="feat-card-img-wrap">
+          <span class="feat-badge feat-badge-orange">⭐ Fan Favourite</span>
+          <img src="Book Covers/Fairyland adult coloring book cover.png" alt="Fairyland Adult Coloring Book" class="shadow-book-orange" style="transform:rotate(-2deg);">
+        </div>
+        <p class="feat-title">Fairyland Adult Coloring Book</p>
+        <p class="feat-sub">Mindfulness &amp; Relaxation</p>
+        <p class="feat-price">$9.99</p>
+        <a href="https://www.amazon.com/Fairyland-Adult-Coloring-Book-Mindfulness/dp/B0GSYYPPR2/" target="_blank" rel="noopener" class="btn-orange" style="font-size:0.85rem;padding:9px 20px;">Get Your Copy</a>
+      </div>
+
+      <!-- Farming (centre — largest) -->
+      <div class="feat-card feat-card-center">
+        <div class="feat-card-img-wrap">
+          <span class="feat-badge feat-badge-blue">100 Puzzles!</span>
+          <img src="Book Covers/Farming Word Search Cover 8.5x11 v1.png" alt="Farming Word Search" class="shadow-book-blue">
+        </div>
+        <p class="feat-title">Farming Word Search</p>
+        <p class="feat-sub">100 Puzzles · 1800 Words</p>
+        <p class="feat-price">$9.99</p>
+        <a href="https://www.amazon.com/Farming-Word-Search-Puzzle-Book/dp/B0GQH67KYF/" target="_blank" rel="noopener" class="btn-orange" style="font-size:0.85rem;padding:9px 20px;">Get Your Copy</a>
+      </div>
+
+      <!-- Toddlers -->
+      <div class="feat-card">
+        <div class="feat-card-img-wrap">
+          <span class="feat-badge feat-badge-orange">Ages 2–4</span>
+          <img src="Book Covers/The big simple coloring book for toddlers cover page.png" alt="Big Simple Coloring Book for Toddlers" class="shadow-book-orange" style="transform:rotate(2deg);">
+        </div>
+        <p class="feat-title">Big Simple Coloring Book for Toddlers</p>
+        <p class="feat-sub">100+ Big &amp; Easy Pictures</p>
+        <p class="feat-price">$7.99</p>
+        <a href="https://www.amazon.com/Simple-Coloring-Book-Toddlers-Ages/dp/B0GT3CJ4S7" target="_blank" rel="noopener" class="btn-orange" style="font-size:0.85rem;padding:9px 20px;">Get Your Copy</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ SOCIAL STRIP (below hero, right-aligned) ══════════════════════ -->
+<div class="social-strip">
+  <div class="social-strip-inner">
+    <span class="social-strip-label">Follow us:</span>
+    <a href="https://www.pinterest.com" target="_blank" rel="noopener" class="social-btn social-btn-pinterest">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      Pinterest
+    </a>
+    <a href="https://www.amazon.com/stores/Ruan-Roo/author/B0GNMS9281" target="_blank" rel="noopener" class="social-btn social-btn-amazon">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.958 10.09c0 1.232.029 2.256-.591 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.924-1.922-2.292 0-2.692 2.415-3.182 4.7-3.182v.685zm3.186 7.705c-.209.189-.512.201-.745.074-1.047-.872-1.234-1.276-1.814-2.106-1.734 1.768-2.962 2.297-5.209 2.297-2.66 0-4.731-1.641-4.731-4.925 0-2.565 1.391-4.309 3.37-5.164 1.715-.754 4.11-.89 5.942-1.095v-.41c0-.753.06-1.642-.384-2.294-.385-.579-1.124-.82-1.775-.82-1.205 0-2.277.618-2.54 1.897-.054.285-.261.567-.549.582l-3.061-.333c-.259-.056-.546-.267-.472-.661.705-3.716 4.06-4.836 7.066-4.836 1.537 0 3.547.41 4.758 1.574 1.538 1.436 1.392 3.352 1.392 5.438v4.923c0 1.481.616 2.13 1.192 2.929.204.287.247.63-.01.839l-2.43 2.09z"/></svg>
+      Amazon Store
+    </a>
+  </div>
+</div>
+
+<!-- ══ CATEGORY TILES ═════════════════════════════════════════════════ -->
+<section class="cat-section">
+  <div class="cat-section-inner">
+    <div class="pill-tag">Browse Our Collection</div>
+    <h2 class="f-display">Shop by Category</h2>
+    <div class="cat-tiles">
+      <a href="coloring-books.html" class="cat-tile">
+        <span class="cat-tile-icon">🎨</span>
+        <span class="cat-tile-label">Coloring Books</span>
+        <span class="cat-tile-count">2 Books Available</span>
+      </a>
+      <a href="word-search.html" class="cat-tile">
+        <span class="cat-tile-icon">🔍</span>
+        <span class="cat-tile-label">Word Search Books</span>
+        <span class="cat-tile-count">9 Books Available</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ COLORING BOOKS ════════════════════════════════════════════════ -->
+<section id="coloring" class="book-section book-section-cream">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="pill-tag">🎨 Coloring Books</div>
+      <h2 class="f-display">Color Your World</h2>
+      <p>From whimsical adult mindfulness art to toddler-friendly pictures — something for every age. <a href="coloring-books.html" style="color:var(--orange);font-weight:800;">Learn about the benefits →</a></p>
+    </div>
+    <div class="books-grid-2">
+
+      <!-- Fairyland -->
+      <div class="book-card">
+        <img src="Book Covers/Fairyland adult coloring book cover.png" alt="Fairyland Adult Coloring Book" class="book-card-img-lg">
+        <div class="book-card-body">
+          <p class="book-card-title">Fairyland Adult Coloring Book</p>
+          <p class="book-card-sub">Mindfulness &amp; Relaxation · For Adults</p>
+          <p class="book-card-price">$9.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Fairyland-Adult-Coloring-Book-Mindfulness/dp/B0GSYYPPR2/" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="fairyland" onclick="toggleSave('fairyland','Fairyland Adult Coloring Book')" aria-label="Save book">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="btn-icon" onclick="shareBook('Fairyland Adult Coloring Book','https://www.amazon.com/Fairyland-Adult-Coloring-Book-Mindfulness/dp/B0GSYYPPR2/')" aria-label="Share book">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Fairyland Adult Coloring Book')">✏️ Request a Personalised Version</button>
+        </div>
+      </div>
+
+      <!-- Toddlers -->
+      <div class="book-card">
+        <img src="Book Covers/The big simple coloring book for toddlers cover page.png" alt="The Big Simple Coloring Book for Toddlers" class="book-card-img-lg">
+        <div class="book-card-body">
+          <p class="book-card-title">The Big Simple Coloring Book for Toddlers</p>
+          <p class="book-card-sub">Ages 2–4 · 100+ Big &amp; Easy Pictures</p>
+          <p class="book-card-price">$7.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Simple-Coloring-Book-Toddlers-Ages/dp/B0GT3CJ4S7" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="toddlers-coloring" onclick="toggleSave('toddlers-coloring','Big Simple Coloring Book for Toddlers')" aria-label="Save book">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="btn-icon" onclick="shareBook('Big Simple Coloring Book for Toddlers','https://www.amazon.com/Simple-Coloring-Book-Toddlers-Ages/dp/B0GT3CJ4S7')" aria-label="Share book">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Big Simple Coloring Book for Toddlers')">✏️ Request a Personalised Version</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ WORD SEARCH ═══════════════════════════════════════════════════ -->
+<section id="wordsearch" class="book-section book-section-blue">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="pill-tag pill-tag-blue">🔍 Word Search Books</div>
+      <h2 class="f-display">Find Your Favourite Theme</h2>
+      <p>50+ or 100 puzzles per book — large print, easy to read, perfect for adults, seniors &amp; teens. <a href="word-search.html" style="color:var(--orange);font-weight:800;">Learn about the benefits →</a></p>
+    </div>
+    <div class="books-grid-3">
+
+      <!-- Alaska -->
+      <div class="book-card">
+        <img src="Book Covers/Alaska Word Search Cover 8.5x11 v1.png" alt="Alaska Word Search">
+        <div class="book-card-body">
+          <p class="book-card-title">Alaska Word Search</p>
+          <p class="book-card-sub">Easy-to-Read · Adults &amp; Seniors</p>
+          <p class="book-card-price">$9.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Alaska-Search-Puzzle-Easy-Read/dp/B0GQFS1KNR" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="alaska" onclick="toggleSave('alaska','Alaska Word Search')" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="btn-icon" onclick="shareBook('Alaska Word Search','https://www.amazon.com/Alaska-Search-Puzzle-Easy-Read/dp/B0GQFS1KNR')" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Alaska Word Search')">✏️ Personalise</button>
+        </div>
+      </div>
+
+      <!-- Animal 6x9 -->
+      <div class="book-card">
+        <img src="Book Covers/Animal Word Search Cover 6x9.png" alt="Animal Word Search Compact">
+        <div class="book-card-body">
+          <p class="book-card-title">Animal Word Search — Compact</p>
+          <p class="book-card-sub">6×9 Pocket Size · 50+ Puzzles</p>
+          <p class="book-card-price">$7.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Animal-Word-Search-Puzzle-Book/dp/B0GQ3JVB24" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="animal-compact" onclick="toggleSave('animal-compact','Animal Word Search Compact')" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="btn-icon" onclick="shareBook('Animal Word Search Compact','https://www.amazon.com/Animal-Word-Search-Puzzle-Book/dp/B0GQ3JVB24')" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Animal Word Search Compact')">✏️ Personalise</button>
+        </div>
+      </div>
+
+      <!-- Animal 8.5x11 -->
+      <div class="book-card">
+        <img src="Book Covers/Animal Word Search Cover 8.5x11 v1.png" alt="Animal Word Search Large Print">
+        <div class="book-card-body">
+          <p class="book-card-title">Animal Word Search — Large Print</p>
+          <p class="book-card-sub">8.5×11 · 100 Puzzles</p>
+          <p class="book-card-price">$9.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Animals-Word-Search-Puzzle-Book/dp/B0GQ4BSCXL" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="animal-large" onclick="toggleSave('animal-large','Animal Word Search Large Print')" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="btn-icon" onclick="shareBook('Animal Word Search Large Print','https://www.amazon.com/Animals-Word-Search-Puzzle-Book/dp/B0GQ4BSCXL')" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Animal Word Search Large Print')">✏️ Personalise</button>
+        </div>
+      </div>
+
+      <!-- Army -->
+      <div class="book-card">
+        <img src="Book Covers/Army Word Search Cover 8.5x11 v1.png" alt="Army Word Search">
+        <div class="book-card-body">
+          <p class="book-card-title">Army Word Search</p>
+          <p class="book-card-sub">Easy-to-Read · Adults &amp; Seniors</p>
+          <p class="book-card-price">$9.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Army-Search-Puzzle-Easy-Read/dp/B0GQTP58BK" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="army" onclick="toggleSave('army','Army Word Search')" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="btn-icon" onclick="shareBook('Army Word Search','https://www.amazon.com/Army-Search-Puzzle-Easy-Read/dp/B0GQTP58BK')" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Army Word Search')">✏️ Personalise</button>
+        </div>
+      </div>
+
+      <!-- Easter -->
+      <div class="book-card">
+        <img src="Book Covers/Easter Word Search Cover 8.5x11 v3.png" alt="Easter Word Search">
+        <div class="book-card-body">
+          <p class="book-card-title">Easter Word Search</p>
+          <p class="book-card-sub">Seasonal Fun · 50+ Puzzles</p>
+          <p class="book-card-price">$9.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Easter-Word-Search-Puzzle-Book/dp/B0GR5GRC34" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="easter" onclick="toggleSave('easter','Easter Word Search')" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="btn-icon" onclick="shareBook('Easter Word Search','https://www.amazon.com/Easter-Word-Search-Puzzle-Book/dp/B0GR5GRC34')" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Easter Word Search')">✏️ Personalise</button>
+        </div>
+      </div>
+
+      <!-- Farming -->
+      <div class="book-card">
+        <img src="Book Covers/Farming Word Search Cover 8.5x11 v1.png" alt="Farming Word Search">
+        <div class="book-card-body">
+          <p class="book-card-title">Farming Word Search</p>
+          <p class="book-card-sub">100 Puzzles · 1800 Words</p>
+          <p class="book-card-price">$9.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Farming-Word-Search-Puzzle-Book/dp/B0GQH67KYF" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="farming" onclick="toggleSave('farming','Farming Word Search')" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="btn-icon" onclick="shareBook('Farming Word Search','https://www.amazon.com/Farming-Word-Search-Puzzle-Book/dp/B0GQH67KYF')" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Farming Word Search')">✏️ Personalise</button>
+        </div>
+      </div>
+
+      <!-- Golf -->
+      <div class="book-card">
+        <img src="Book Covers/Golf Word Search Cover.png" alt="Golf Word Search">
+        <div class="book-card-body">
+          <p class="book-card-title">Golf Word Search</p>
+          <p class="book-card-sub">For Golf Enthusiasts · 50+ Puzzles</p>
+          <p class="book-card-price">$7.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Golf-Word-Search-Puzzle-Book/dp/B0GPD3ZFL2" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="golf" onclick="toggleSave('golf','Golf Word Search')" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="btn-icon" onclick="shareBook('Golf Word Search','https://www.amazon.com/Golf-Word-Search-Puzzle-Book/dp/B0GPD3ZFL2')" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Golf Word Search')">✏️ Personalise</button>
+        </div>
+      </div>
+
+      <!-- Navy -->
+      <div class="book-card">
+        <img src="Book Covers/Navy Word Search Cover 8.5x11 v1.png" alt="Navy Word Search">
+        <div class="book-card-body">
+          <p class="book-card-title">Navy Word Search</p>
+          <p class="book-card-sub">Easy-to-Read · Adults &amp; Seniors</p>
+          <p class="book-card-price">$9.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Navy-Word-Search-Puzzle-Book/dp/B0GR3Y9DFQ" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="navy" onclick="toggleSave('navy','Navy Word Search')" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="btn-icon" onclick="shareBook('Navy Word Search','https://www.amazon.com/Navy-Word-Search-Puzzle-Book/dp/B0GR3Y9DFQ')" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Navy Word Search')">✏️ Personalise</button>
+        </div>
+      </div>
+
+      <!-- Retro -->
+      <div class="book-card">
+        <img src="Book Covers/Retro Word Search Cover.png" alt="Retro Word Search">
+        <div class="book-card-body">
+          <p class="book-card-title">Retro Word Search</p>
+          <p class="book-card-sub">Nostalgic Themes · 50+ Puzzles</p>
+          <p class="book-card-price">$7.99</p>
+          <div class="book-card-cta-row">
+            <a href="https://www.amazon.com/Retro-Word-Search-Puzzle-Book/dp/B0GPDVP4KX" target="_blank" rel="noopener" class="btn-small">Get Your Copy</a>
+            <button class="btn-icon" data-save-btn="retro" onclick="toggleSave('retro','Retro Word Search')" aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            <button class="btn-icon" onclick="shareBook('Retro Word Search','https://www.amazon.com/Retro-Word-Search-Puzzle-Book/dp/B0GPDVP4KX')" aria-label="Share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></button>
+          </div>
+          <button class="btn-personalise" onclick="openPersonalise('Retro Word Search')">✏️ Personalise</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══════════════════════════════════════════════════════════ -->
+<section id="about" class="about-section">
+  <div class="about-inner">
+    <img src="Brand Assets/Ruan Roo Logo transparent.png" alt="Ruan Roo Publishing" class="about-logo">
+    <div class="pill-tag pill-tag-white" style="margin-bottom:12px;">About Us</div>
+    <h2 class="f-display">Our Story</h2>
+    <p>At Ruan Roo Publishing, we believe that books should bring joy, spark curiosity, and create moments of calm in everyday life. Whether you're a toddler discovering the joy of coloring, a senior keeping your mind sharp with word puzzles, or an adult finding peace through mindful art — we have a book for you.</p>
+    <p class="accent-p">Our growing collection spans coloring books, word search puzzles, and more — all crafted with care and available exclusively on Amazon. New titles added regularly.</p>
+    <a href="https://www.amazon.com/stores/Ruan-Roo/author/B0GNMS9281?ref=ap_rdr" target="_blank" rel="noopener" class="btn-orange">Visit Our Amazon Author Page</a>
+  </div>
+</section>
+
+<!-- ══ REVIEWS ════════════════════════════════════════════════════════ -->
+<section class="reviews-section">
+  <div class="reviews-inner">
+    <div class="pill-tag">⭐ Community Reviews</div>
+    <h2 class="f-display">What Our Readers Say</h2>
+    <p class="sub">Loved a book? Share your thoughts below — we'd love to hear from you!</p>
+
+    <!-- Review form -->
+    <div class="review-form">
+      <h3>Leave a Review</h3>
+      <form id="review-form" onsubmit="submitReview(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="r-name">Your Name *</label>
+            <input type="text" id="r-name" placeholder="Jane S." required>
+          </div>
+          <div class="form-group">
+            <label for="r-book">Book Title</label>
+            <input type="text" id="r-book" placeholder="Which book are you reviewing?">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Your Rating *</label>
+          <div class="star-rating-input">
+            <input type="radio" id="s5" name="rating" value="5" checked><label for="s5">★</label>
+            <input type="radio" id="s4" name="rating" value="4"><label for="s4">★</label>
+            <input type="radio" id="s3" name="rating" value="3"><label for="s3">★</label>
+            <input type="radio" id="s2" name="rating" value="2"><label for="s2">★</label>
+            <input type="radio" id="s1" name="rating" value="1"><label for="s1">★</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="r-comment">Your Review *</label>
+          <textarea id="r-comment" placeholder="Tell us what you loved about the book..." required></textarea>
+        </div>
+        <button type="submit" class="btn-orange" style="font-size:0.95rem;padding:11px 28px;">Submit Review</button>
+      </form>
+    </div>
+
+    <!-- Reviews list -->
+    <div class="reviews-list" id="reviews-list">
+      <p class="no-reviews">Be the first to leave a review!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <img src="Brand Assets/Ruan Roo Logo transparent.png" alt="Ruan Roo Publishing">
+    <div class="footer-copy">
+      © 2025 Ruan Roo Publishing. All rights reserved.
+      <span>All books available exclusively on Amazon KDP.</span>
+    </div>
+    <div class="footer-links">
+      <a href="coloring-books.html">Coloring Books</a>
+      <a href="word-search.html">Word Search</a>
+      <a href="#about">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://www.amazon.com/stores/Ruan-Roo/author/B0GNMS9281?ref=ap_rdr" target="_blank" rel="noopener">Amazon Store</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ PERSONALISE MODAL ══════════════════════════════════════════════ -->
+<div class="modal-overlay" id="personalise-modal" onclick="if(event.target===this)closePersonalise()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closePersonalise()" aria-label="Close">×</button>
+    <h2>✏️ Request a Personalised Book</h2>
+    <p class="modal-sub">Tell us what you'd like and we'll be in touch!</p>
+    <form onsubmit="submitPersonalise(event)">
+      <div class="form-group">
+        <label>Book</label>
+        <input type="text" id="personalise-book" readonly style="background:#f0ece6;">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="p-name">Your Name *</label>
+          <input type="text" id="p-name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="p-email">Your Email *</label>
+          <input type="email" id="p-email" placeholder="you@email.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="p-request">Personalisation Details *</label>
+        <textarea id="p-request" placeholder="Describe what you'd like customised — theme, name, dedication, colours, etc." style="min-height:110px;" required></textarea>
+      </div>
+      <button type="submit" class="btn-orange" style="width:100%;font-size:0.95rem;">Send Request</button>
+    </form>
+  </div>
+</div>
+
+<!-- ══ TOAST ══════════════════════════════════════════════════════════ -->
+<div class="toast" id="toast"></div>
+
+<!-- ══ SEO HIDDEN KEYWORDS ════════════════════════════════════════════ -->
+<div class="seo-keywords" aria-hidden="true">
+  word search books for adults, word search puzzle books, coloring books for adults, adult coloring books mindfulness, toddler coloring books ages 2-4, children coloring books, activity books for seniors, brain games for seniors, large print word search, easy word search puzzles, themed word search books, Alaska word search, animal word search, farming word search, golf word search, army word search, navy word search, Easter word search, retro word search, fairyland coloring book, mindfulness coloring book, relaxation coloring, Amazon KDP books, buy books on Amazon, puzzle books for adults, activity books for kids, word puzzle books, Ruan Roo Publishing, books for curious minds
+</div>
+
+<!-- ══ JS ═════════════════════════════════════════════════════════════ -->
+<script>
+  /* ── SAVE / WISHLIST ── */
+  function toggleSave(id, title) {
+    let saved = JSON.parse(localStorage.getItem('rr_saved') || '[]');
+    const idx = saved.findIndex(b => b.id === id);
+    if (idx >= 0) {
+      saved.splice(idx, 1);
+      showToast('Removed from saved books');
+    } else {
+      saved.push({ id, title });
+      showToast('💾 Saved! Find your books any time.');
+    }
+    localStorage.setItem('rr_saved', JSON.stringify(saved));
+    updateSaveButtons();
+  }
+
+  function updateSaveButtons() {
+    const saved = JSON.parse(localStorage.getItem('rr_saved') || '[]');
+    const ids = saved.map(b => b.id);
+    document.querySelectorAll('[data-save-btn]').forEach(btn => {
+      const id = btn.getAttribute('data-save-btn');
+      btn.classList.toggle('saved', ids.includes(id));
+      btn.setAttribute('aria-label', ids.includes(id) ? 'Remove from saved' : 'Save book');
+      btn.querySelector('svg').setAttribute('fill', ids.includes(id) ? '#e74c3c' : 'none');
+    });
+  }
+
+  /* ── SHARE ── */
+  async function shareBook(title, url) {
+    if (navigator.share) {
+      try { await navigator.share({ title: `${title} — Ruan Roo Publishing`, url }); } catch(_) {}
+    } else {
+      try {
+        await navigator.clipboard.writeText(url);
+        showToast('🔗 Link copied to clipboard!');
+      } catch(_) {
+        showToast('Copy this link: ' + url);
+      }
+    }
+  }
+
+  /* ── TOAST ── */
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(t._timer);
+    t._timer = setTimeout(() => t.classList.remove('show'), 3000);
+  }
+
+  /* ── PERSONALISE MODAL ── */
+  function openPersonalise(bookTitle) {
+    document.getElementById('personalise-book').value = bookTitle;
+    document.getElementById('personalise-modal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closePersonalise() {
+    document.getElementById('personalise-modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function submitPersonalise(e) {
+    e.preventDefault();
+    const name    = document.getElementById('p-name').value;
+    const email   = document.getElementById('p-email').value;
+    const book    = document.getElementById('personalise-book').value;
+    const request = document.getElementById('p-request').value;
+    const subject = encodeURIComponent(`Personalisation Request: ${book}`);
+    const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nBook: ${book}\n\nPersonalisation Request:\n${request}`);
+    window.location.href = `mailto:rooruan00@gmail.com?subject=${subject}&body=${body}`;
+    closePersonalise();
+    showToast('✅ Opening your email client...');
+  }
+
+  /* ── REVIEWS ── */
+  function loadReviews() {
+    const reviews = JSON.parse(localStorage.getItem('rr_reviews') || '[]');
+    const el = document.getElementById('reviews-list');
+    if (!el) return;
+    if (!reviews.length) {
+      el.innerHTML = '<p class="no-reviews">Be the first to leave a review!</p>';
+      return;
+    }
+    el.innerHTML = reviews.map(r => `
+      <div class="review-card">
+        <div class="review-avatar">${r.name[0].toUpperCase()}</div>
+        <div style="flex:1">
+          <div class="review-header">
+            <span class="review-name">${escHtml(r.name)}</span>
+            ${r.book ? `<span style="font-size:0.78rem;color:#bbb;font-weight:600;">on "${escHtml(r.book)}"</span>` : ''}
+            <span class="review-stars">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</span>
+          </div>
+          <p class="review-text">${escHtml(r.comment)}</p>
+          <p class="review-date">${r.date}</p>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function escHtml(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function submitReview(e) {
+    e.preventDefault();
+    const name    = document.getElementById('r-name').value.trim();
+    const book    = document.getElementById('r-book').value.trim();
+    const rating  = parseInt(document.querySelector('input[name="rating"]:checked')?.value || 5);
+    const comment = document.getElementById('r-comment').value.trim();
+    if (!name || !comment) return;
+    const reviews = JSON.parse(localStorage.getItem('rr_reviews') || '[]');
+    reviews.unshift({ name, book, rating, comment, date: new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}) });
+    localStorage.setItem('rr_reviews', JSON.stringify(reviews));
+    document.getElementById('review-form').reset();
+    loadReviews();
+    showToast('⭐ Thank you for your review!');
+  }
+
+  /* ── INIT ── */
+  document.addEventListener('DOMContentLoaded', () => {
+    updateSaveButtons();
+    loadReviews();
+  });
+</script>
+</body>
+</html>
